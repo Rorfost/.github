@@ -1,0 +1,60 @@
+name: Bug report
+description: Tell us about a problem you can reproduce in a Rorfost project.
+title: "[Bug]: "
+body:
+    - type: markdown
+      attributes:
+          value: |
+              Thanks for reporting a problem. Do not share passwords, keys, personal data, or security details here.
+    - type: checkboxes
+      id: checks
+      attributes:
+          label: Before submitting
+          options:
+              - label: I searched existing issues and did not find a duplicate.
+                required: true
+              - label: I read the relevant documentation.
+                required: true
+    - type: textarea
+      id: description
+      attributes:
+          label: Short description
+          description: Describe the problem clearly and briefly.
+          placeholder: What happened?
+      validations:
+          required: true
+    - type: textarea
+      id: reproduction
+      attributes:
+          label: Steps to reproduce
+          description: Share the smallest set of steps that shows the problem every time.
+          placeholder: |
+              1. ...
+              2. ...
+              3. ...
+      validations:
+          required: true
+    - type: textarea
+      id: expected
+      attributes:
+          label: Expected behavior
+          description: What did you expect to happen?
+      validations:
+          required: true
+    - type: textarea
+      id: actual
+      attributes:
+          label: Actual behavior
+          description: What happened instead? Add safe error messages or screenshots when useful.
+      validations:
+          required: true
+    - type: textarea
+      id: environment
+      attributes:
+          label: Environment
+          description: Add useful details such as OS, runtime or browser version, and project version or commit.
+    - type: textarea
+      id: context
+      attributes:
+          label: Additional context
+          description: Add anything else that may help us investigate.

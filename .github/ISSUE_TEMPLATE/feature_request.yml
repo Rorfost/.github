@@ -1,0 +1,32 @@
+name: Feature request
+description: Suggest an improvement for a Rorfost project.
+title: "[Feature]: "
+body:
+    - type: markdown
+      attributes:
+          value: |
+              Thanks for sharing an idea. A short description is enough.
+    - type: textarea
+      id: problem
+      attributes:
+          label: Problem or goal
+          description: What problem would this solve, or what would it improve?
+      validations:
+          required: true
+    - type: textarea
+      id: idea
+      attributes:
+          label: Proposed idea
+          description: Describe the change you would like to see.
+      validations:
+          required: true
+    - type: textarea
+      id: alternatives
+      attributes:
+          label: Possible alternatives
+          description: Are there other ideas, workarounds, or tools to consider?
+    - type: textarea
+      id: context
+      attributes:
+          label: Additional context
+          description: Add examples, links, or other useful details.
